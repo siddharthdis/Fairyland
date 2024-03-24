@@ -27,9 +27,9 @@ In essence, Fairyland is a sanctuary where imaginations run wild, and the journe
 
 ## Authors
 
-- Siddharth Dixit
-  - Email: siddharthdis3432@gmail.com
+- Siddharth Yadav
+  -  Email: [siddharthdis3432@gmail.com](mailto:siddharthdis3432@gmail.com)
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
