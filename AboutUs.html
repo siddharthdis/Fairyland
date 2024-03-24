@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Fun 'n' Fairy land</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link href="savage.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <div style="">
+      <div></div>
+
+      <div style="float:right;margin: 1% 5%;">
+        <div>
+          <a href="#">
+            <div style="border-radius:50%;float:left;background-color:white;display: inline-block;cursor: pointer;">
+              <h2>&nbsp;&nbsp; 📞&nbsp;&nbsp;
+            </div>
+          </a>
+          <div style="float:right">
+            <button class="button" onclick="openForm()" style="display: inline-block;"><span>Book Tickets
+              </span></button>
+            <div class="form-popup" id="myForm">
+              <form action="/action_page.php" class="form-container">
+                <h1>Book Tickets</h1>
+
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+
+                <label for="phone"><b>Phone No.</b></label>
+                <input type="number" placeholder="Enter Phone Number" name="psw" required>
+
+                <button type="submit" class="btn">Book Now!</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div style="padding: 300px; text-align: center;">
+      <h1>Fun 'n' Fairy land</h1>
+      <hr width="330px">
+      <h2>Where the magic comes alive</h2>
+    </div>
+  </div>
+  <div class="navbar">
+    <a href="index.html" class="">Home</a>
+    <a href="AboutUs.html" class="active">About Us</a>
+    <a href="our_facilities.html">Fun Activties</a>
+    <a href="grouppicnic.html">Picnic</a>
+  </div>
+
+  <div class="textbox2">
+    <h1>About Us</h1>
+  </div>
+  <div class="main"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(images/header4.jpg);">
+    <div style="margin: 0px 100px 100px">
+      <div class="row">
+        <div class="column about_area">
+
+          <div class="textbox3_internal">
+            <h2>About Fairyland:</h2>
+            <div class="textbox">
+              <p style="margin: 20px 20px 20px;"><br>
+                At Fairyland, we believe in the power of imagination and the wonder of magical realms. Our mission is to
+                bring the enchantment of Fairyland to life through captivating stories, beautiful illustrations, and
+                interactive experiences. Step into a world where dreams come true and embark on a journey filled with
+                joy, inspiration, and a touch of magic!
+              </p>
+            </div>
+          </div>
+          <br>
+          <br>
+        </div>
+        <div class="column about_area">
+          <div class="textbox3_internal">
+            <h2>Our Vision:
+            </h2>
+            <div class="textbox">
+              <p style="margin: 20px 20px 20px;"><br>
+                We envision Fairyland as a place where children and adults alike can escape the ordinary and embrace the
+                extraordinary. Through our carefully crafted attractions, immersive adventures, and engaging activities,
+                we aim to spark imagination, nurture creativity, and ignite a lifelong love for fantastical tales.
+              </p>
+            </div>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+  </div>
+
+  <div class="main" style="background-image: url(images/header2.jpg);text-align: center;">
+    <hr style="width:30%;">
+    <h1>Meet our experts!</h1>
+    <hr style="width:20%;">
+
+    <div class="col">
+      <div class="card">
+        <img src="images/avatar1.png" style="width:100%">
+        <div class="container">
+          <h2>Kunsh Chopra</h2>
+          <p class="title">Lead Graphite Diamond &amp; Bukminsterfullerine</p>
+          <p>Expert in python, hates web designing</p>
+          <p>kunshchopra07@gmail.com</p>
+          <p><button class="btnn">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/avatar2.png" style="width:100%">
+        <div class="container">
+          <h2>Siddharth Yadav</h2>
+          <p class="title">Platinum Palladium Nickel &amp; Astetine</p>
+          <p>Expert in hacking, hates web designing</p>
+          <p>siddharthdis3432@gmail.com</p>
+          <p><button class="btnn">Contact</button></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="textbox2">
+    <h3>Follow us !</h3>
+    <div style=" display: inline-block;float:left;">
+      <p>Privacy Policy</p>
+    </div>
+    <div style="display: inline-block;">
+      <img src="images/Facebook.png" id="fb" width="30px" height="30px">
+      <img src="images/Twitter.png" id="fb" width="30px" height="30px">
+      <img src="images/Insta.png" id="fb" width="30px" height="30px">
+      <img src="images/Youtube.png" id="fb" width="40px" height="30px">
+
+    </div>
+    <div style="display: inline-block;float:right;">
+      <p>copyright@2023</p>
+    </div><br><br>
+  </div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

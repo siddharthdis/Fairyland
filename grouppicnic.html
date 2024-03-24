@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Fun 'n' Fairy land</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link href="savage.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <div style="">
+      <div></div>
+
+      <div style="float:right;margin: 1% 5%;">
+        <div>
+          <a href="#">
+            <div style="border-radius:50%;float:left;background-color:white;display: inline-block;cursor: pointer;">
+              <h2>&nbsp;&nbsp; 📞&nbsp;&nbsp;
+            </div>
+          </a>
+          <div style="float:right">
+            <button class="button" onclick="openForm()" style="display: inline-block;"><span>Book Tickets
+              </span></button>
+            <div class="form-popup" id="myForm">
+              <form action="/action_page.php" class="form-container">
+                <h1>Book Tickets</h1>
+
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+
+                <label for="phone"><b>Phone No.</b></label>
+                <input type="number" placeholder="Enter Phone Number" name="psw" required>
+
+                <button type="submit" class="btn">Book Now!</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div style="padding: 350px; text-align: center;">
+      <h1>Fun 'n' Fairy land</h1>
+      <hr width="330px">
+      <h2>Where the magic comes alive</h2>
+    </div>
+  </div>
+  <div class="navbar">
+    <a href="index.html" class="">Home</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="our_facilities.html">Fun Activties</a>
+    <a href="grouppicnic.html" class="active">Picnic</a>
+  </div>
+
+  <div class="textbox2">
+    <h1>Corporate parties and Groups</h1>
+  </div>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">
+      <h2>Corporate Events</h2>
+    </button><br>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">
+      <h2>School Groups</h2>
+    </button>
+  </div>
+
+  <div id="London" class="tabcontent">
+    <h3>Corporate Events</h3>
+    <p>Fun 'n' Fairy Land is an ideal getaway for team building exercises, corporate occasions, product launches,
+      merchant meets and gatherings, all in a conventional yet invigorating way.</p>
+    <div class="textbox3">
+      <div class="textbox3_internal">
+
+        <h4>
+          Pure veg dinner-North Indian & Maharashtran Cuisine<br><br>
+          Fairy folk dances<br><br>
+          Puppet Show<br><br>
+          Magician<br><br>
+          Cave<br><br>
+          Castle Tour<br><br>
+          Waterpark<br><br>
+          Illusion Museum<br><br>
+          Fire Performance<br><br>
+          Ride & Skill Games<br><br>
+          Adventure Activities</h4>
+      </div>
+    </div>
+  </div>
+
+  <div id="Paris" class="tabcontent" style="display:none">
+    <h3>School Groups</h3>
+    <h2>GIVES US A RING: LET THE PICNIC BEGIN</h2>
+    <div class="textbox3" style="width:50%">
+      <div class="textbox3_internal">
+        <p>
+          Fairy Land offers different activities that give immense pleasure and enjoyment to the kids.<br><br> Apart
+          from the general activities like Roller Coaster ride, waterpark, illusion museum and stoneware , there are
+          some other exciting activities like castle tour, magic shows, puppet shows, mini train rides, etc.<br><br><br>
+        </p>
+        <h2>FOR BOOKINGS, GET IN TOUCH WITH OUR REPRESENTATIVES:</h2>
+        <h3></h3>CALL US:+91-98971XXXXX, 96723XXXXX</h3>
+      </div>
+    </div>
+  </div>
+  <div class="textbox2">
+    <h3 style="margin-top:10px">Follow us !</h3>
+    <div style=" display: inline-block;float:left;">
+      <p>Privacy Policy</p>
+    </div>
+    <div style="display: inline-block;">
+      <img src="images/Facebook.png" id="fb" width="30px" height="30px">
+      <img src="images/Twitter.png" id="fb" width="30px" height="30px">
+      <img src="images/Insta.png" id="fb" width="30px" height="30px">
+      <img src="images/Youtube.png" id="fb" width="40px" height="30px">
+
+    </div>
+    <div style="display: inline-block;float:right;">
+      <p>copyright@2023</p>
+    </div><br><br>
+  </div>
+</body>
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+</script>

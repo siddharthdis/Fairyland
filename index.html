@@ -1,0 +1,357 @@
+<html>
+
+<head>
+  <title>Fun 'n' Fairy land</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link href="savage.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <div style="">
+      <div></div>
+
+      <div style="float:right;margin: 1% 5%;">
+        <div>
+          <a href="#">
+            <div style="border-radius:50%;float:left;background-color:white;display: inline-block;cursor: pointer;">
+              <h2>&nbsp;&nbsp; 📞&nbsp;&nbsp;
+            </div>
+          </a>
+          <div style="float:right">
+            <button class="button" onclick="openForm()" style="display: inline-block;"><span>Book Tickets
+              </span></button>
+            <div class="form-popup" id="myForm">
+              <form action="/action_page.php" class="form-container">
+                <h1>Book Tickets</h1>
+
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+
+                <label for="phone"><b>Phone No.</b></label>
+                <input type="number" placeholder="Enter Phone Number" name="psw" required>
+
+                <button type="submit" class="btn">Book Now!</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div style="padding: 350px; text-align: center;">
+      <h1>Fun 'n' Fairy land</h1>
+      <hr width="330px">
+      <h2>Where the magic comes alive</h2>
+    </div>
+  </div>
+  <div class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="our_facilities.html">Fun Activties</a>
+    <a href="grouppicnic.html">Picnic</a>
+  </div>
+
+  <div class="main"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/fairyland-canyon-chromebook-wallpaper.jpg);background-repeat: no-repeat;background-size: cover;background-attachment:fixed;">
+    <div style="margin: 0px 100px 0px;">
+
+
+
+
+
+      <div class="row">
+
+        <div class="column area">
+          <div class="textbox3_internal">
+            <h2>🎪 Discover</h2>
+            <p class="textbox">Welcome to Fairyland, where dreams become reality and magic fills the air. Immerse
+              yourself in a
+              world of
+              wonder and embark on an extraordinary journey through the realms of fairies, elves, and mythical
+              creatures.
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="column area">
+          <div class="textbox3_internal">
+            <h2>✈️ Explore</h2>
+            <div>
+              <p class="textbox">
+                Enter the realm of fairies, where shimmering wings and
+                sparkling pixie
+                dust
+                abound. Meet the Fairy Queen, explore their enchanting dwellings, and learn about their
+                mystical
+                powers.</p>
+            </div>
+            <div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="column area">
+          <div class="textbox3_internal">
+            <h2>🎡 Adventure</h2>
+            <div class="textbox">
+              <p style="margin: 20px 20px 20px;">
+                Embark on thrilling quests and unforgettable adventures through our interactive
+                experiences.<br>
+                Join the Fairy Council, solve riddles, and unlock hidden treasures.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+  <div class="textbox2">
+    <h1>Our Vision</h1>
+  </div>
+  <div class="main"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/header3.jpg);">
+    <img class="area" src="images\fairy.jpg" width="450px" height="640px" style="margin-left: 250px;">
+
+    <div class=" textbox3" style="width:35%;margin-left: 100px;">
+      <div class="textbox3_internal"><br>
+        <h3 class="textbox">We envision Fairyland as a place where children and adults alike can escape the ordinary and
+          embrace the extraordinary. Through our carefully crafted attractions, immersive adventures, and engaging
+          activities, we aim to spark imagination, nurture creativity, and ignite a lifelong love for fantastical tales.
+          <br><br>
+          At Fairyland, we believe in the power of imagination and the wonder of magical realms. Our mission is to bring
+          the enchantment of Fairyland to life through captivating stories, beautiful illustrations, and interactive
+          experiences. Step into a world where dreams come true and embark on a journey filled with joy, inspiration,
+          and a touch of magic!<br><br><br><br><br><br><br>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class=textbox2>
+    <h1>Gallery</h1>
+  </div>
+  <div class="main"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(images/header6.jpg);">
+    <div style="width: 20%; display: inline-block; margin-left: 100px;">
+      <img id="img1" class="galleryimage" src="images\gallery\1.jpg" style="width: 100%;">
+      <div id="Modal1" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div><br><br>
+      <img id="img1" class="galleryimage" src="images\gallery\6.jpg" style="width: 100%;height:50%">
+      <div id="Modal1" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div><br><br>
+
+    </div>
+
+
+    <div style="width: 20%; display: inline-block; vertical-align: top; margin-left: 20px;">
+      <img class="galleryimage" src="images\gallery\2.jpg" style="width: 100%;">
+      <div class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+      <br><br>
+      <img class="galleryimage" src="images\gallery\5.jpg" style="width: 100%;height:25%">
+      <div class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div><br><br>
+      <img id="img1" class="galleryimage" src="images\gallery\10.jpeg" style="width: 100%;height:30%;">
+      <div id="Modal1" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+    </div>
+
+
+    <div style="width: 20%; display: inline-block; vertical-align: top;margin-left: 20px;">
+      <img id="img1" class="galleryimage" src="images\gallery\3.jpg" style="width: 100%;">
+      <div class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div><br><br>
+      <img id="img1" class="galleryimage" src="images\gallery\7.jpg" style="width: 100%;">
+      <div class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div><br><br>
+      <img id="img1" class="galleryimage" src="images\gallery\11.jpeg" style="width: 100%;height:27%">
+      <div id="Modal1" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+    </div>
+    <div style="width: 20%; display: inline-block; vertical-align: top;margin-left: 20px;">
+      <img id="img1" class="galleryimage" src="images\gallery\4.jpg" style="width: 100%;">
+      <div class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div><br><br>
+      <img id="img1" class="galleryimage" src="images\gallery\8.jpg" style="width: 100%;height:25%">
+      <div id="Modal1" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div><br><br>
+      <img id="img1" class="galleryimage" src="images\gallery\12.jpeg" style="width: 100%;">
+      <div id="Modal1" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+    </div>
+  </div>
+  <div class=textbox2>
+    <h1>Available Restaurants</h1>
+  </div>
+  <div class="main"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)), url(images/header4.jpg);">
+    <div class="textbox3" style="margin-left: 300px;">
+      <div class="textbox3_internal">
+        <img src="images/restaurants.png" width="850px" height="500px">
+      </div>
+    </div>
+  </div>
+  <div class=textbox2>
+    <h1>Geomap</h1>
+  </div>
+  <div class="main"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)), url(images/header5.jpg);">
+    <div class="textbox3" style="float: left;">
+      <div class="textbox3_internal">
+        <h2>Contact Us:</h2>
+        <p>Panvel, South Extension, Block K, II, New Delhi, Delhi 110049<br><br>Phone: 98971XXXXX<br><br>Email us:
+          info@fairyland.com</p>
+      </div>
+    </div>
+    <div class="textbox3" style="display: inline-block; margin-left: 100px;">
+      <div class="textbox3_internal">
+        <img src="images/geomap.png" width="650px" height="400px">
+      </div>
+    </div>
+  </div>
+  <div class="textbox2">
+    <h3>Follow us !</h3>
+    <div style="display: inline-block;float:left;">
+      <p>Privacy Policy</p>
+    </div>
+    <div style="display: inline-block;">
+      <img src="images/Facebook.png" id="fb" width="30px" height="30px">
+      <img src="images/Twitter.png" id="fb" width="30px" height="30px">
+      <img src="images/Insta.png" id="fb" width="30px" height="30px">
+      <img src="images/Youtube.png" id="fb" width="40px" height="30px">
+
+    </div>
+    <div style="display: inline-block;float:right;">
+      <p>copyright@2023</p>
+    </div><br><br>
+  </div>
+  <a href="https://api.whatsapp.com/send/?phone=91-931-580-6836&text=I%20would%20like%20to%20know%20more%20about%20Activities%20of%20Fairy%20Land.&app_absent=0"
+    class="float">
+    <i class="my-float"><img src="images/Whatsapp.png" height="60px" width="60px"></i>
+  </a>
+</body>
+
+<script src="script.js"></script>
+
+</html>
